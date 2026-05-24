@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import AboutSection from "./components/AboutSection.jsx";
+import CreatorSection from "./components/CreatorSection.jsx";
 import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
-import IntroSection from "./components/IntroSection.jsx";
 import LabSection from "./components/LabSection.jsx";
 import Navbar from "./components/Navbar.jsx";
 import PlatformsSection from "./components/PlatformsSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
+import RitiContentSection from "./components/RitiContentSection.jsx";
+import RitiIdentitySection from "./components/RitiIdentitySection.jsx";
+import RitiWorldSection from "./components/RitiWorldSection.jsx";
 import ScrollProgress from "./components/ScrollProgress.jsx";
 import WorldNotesSection from "./components/WorldNotesSection.jsx";
 import BookManagerPage from "./pages/BookManagerPage.jsx";
@@ -83,11 +85,13 @@ export default function App() {
           <Navbar />
           <main>
             <Hero />
-            <IntroSection />
-            <AboutSection />
-            <ProjectsSection />
-            <PlatformsSection />
+            <RitiIdentitySection />
+            <RitiContentSection />
+            <RitiWorldSection />
             <LabSection />
+            <PlatformsSection />
+            <CreatorSection />
+            <ProjectsSection />
             <WorldNotesSection />
           </main>
           <Footer />

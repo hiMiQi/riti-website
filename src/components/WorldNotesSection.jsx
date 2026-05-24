@@ -29,15 +29,15 @@ export default function WorldNotesSection() {
         <div>
           <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-blue-600">
             <PenLine size={17} />
-            关于这个网站
+            下一阶段
           </p>
-          <h2 className="text-2xl font-semibold text-ink sm:text-3xl">这是一个持续更新的个人创作主页</h2>
+          <h2 className="text-2xl font-semibold text-ink sm:text-3xl">让栗提从“有形象”继续变成“有内容”</h2>
           <p className="mt-4 max-w-3xl text-base leading-8 text-muted">
-            我目前在福州学习与创作，关注前端开发、UI 交互、数字媒体和个人创作表达。这个网站会先作为作品入口和自我介绍，之后再逐步加入项目详情、资源分享、互动 Demo 和栗提 Riti 的创作内容。
+            现在首页已经把栗提的基本方向搭起来了：角色介绍、表情包入口、世界设定、小游戏、平台入口和幕后创作记录。后续最值得补的是真实平台链接、更多表情包图鉴、栗提小故事，以及一个更完整的栗提跑酷独立页面。
           </p>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            {["项目展示", "内容整理", "创作记录"].map((item) => (
+            {["表情包图鉴", "角色小故事", "小游戏页面"].map((item) => (
               <div key={item} className="rounded-lg border border-line bg-white px-4 py-3 text-sm font-semibold text-ink">
                 <span className="mr-2 inline-block h-2 w-2 rounded-full bg-blue-600" />
                 {item}
@@ -47,10 +47,10 @@ export default function WorldNotesSection() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="#作品入口"
+              href="#表情包"
               className="inline-flex h-11 items-center justify-center rounded-lg border border-line bg-white px-5 text-sm font-semibold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-700"
             >
-              查看作品入口
+              看表情包
             </a>
             <a
               href="#平台"
@@ -67,8 +67,8 @@ export default function WorldNotesSection() {
               <MapPin size={20} />
             </div>
             <div>
-              <p className="text-sm font-semibold text-ink">坐标</p>
-              <p className="mt-1 text-sm text-muted">福州，正在探索前端、视觉和个人创作的交叉点。</p>
+              <p className="text-sm font-semibold text-ink">联系与合作</p>
+              <p className="mt-1 text-sm text-muted">如果想聊栗提、表情包、前端页面或视觉创作，可以从邮箱开始。</p>
             </div>
           </div>
 

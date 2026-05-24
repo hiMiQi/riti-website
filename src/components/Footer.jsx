@@ -9,7 +9,7 @@ export default function Footer() {
             <PenLine size={17} />
             栗提 Riti
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted">个人创作主页，记录项目、资源、平台内容和栗提 Riti 的成长。</p>
+          <p className="mt-2 text-sm leading-6 text-muted">栗提 Riti 的原创 IP 首页，收集表情包、故事、小游戏、平台入口和幕后创作记录。</p>
         </div>
         <a
           href="mailto:ctrlcvv@163.com"

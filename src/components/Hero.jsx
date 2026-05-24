@@ -81,7 +81,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.08 }}
           >
             <span className="h-2 w-2 rounded-full bg-blue-600" />
-            个人创作主页 · 前端 / 视觉 / IP
+            原创 IP · 表情包 / 故事 / 小游戏
           </motion.div>
 
           <motion.h1
@@ -90,8 +90,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.58, delay: 0.16 }}
           >
-            你好，我是
-            <span className="mt-2 block text-blue-700">栗提 Riti</span>
+            栗提 Riti
+            <span className="mt-2 block text-blue-700">慢慢长大的原创角色</span>
           </motion.h1>
 
           <motion.p
@@ -100,7 +100,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.58, delay: 0.24 }}
           >
-            我在整理前端页面、视觉练习、内容记录，以及原创 IP 栗提 Riti 的一些小作品。
+            一只喜欢独处、认真收藏小灵感的花栗鼠。这里收集栗提的表情包、故事、小游戏和世界设定，也记录它背后的创作者。
           </motion.p>
 
           <motion.div
@@ -110,9 +110,9 @@ export default function Hero() {
             transition={{ duration: 0.58, delay: 0.28 }}
           >
             {[
-              ["Front-end", "页面与交互"],
-              ["Visual", "视觉练习"],
-              ["Riti", "原创 IP"],
+              ["Sticker", "微信表情包"],
+              ["Story", "角色小故事"],
+              ["Game", "栗提小游戏"],
             ].map(([label, value]) => (
               <div key={label} className="rounded-lg border border-line bg-white/72 px-4 py-3 shadow-sm backdrop-blur-md">
                 <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-600">{label}</p>
@@ -128,17 +128,17 @@ export default function Hero() {
             transition={{ duration: 0.58, delay: 0.32 }}
           >
             <a
-              href="#作品入口"
+              href="#栗提是谁"
               className="inline-flex h-12 items-center justify-center gap-3 rounded-lg bg-blue-600 px-7 text-base font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
             >
-              查看作品入口
+              认识栗提
               <ExternalLink size={18} />
             </a>
             <a
-              href="#介绍"
+              href="#表情包"
               className="inline-flex h-12 items-center justify-center gap-3 rounded-lg border border-blue-500/40 bg-white/70 px-7 text-base font-semibold text-blue-700 shadow-sm backdrop-blur-md transition hover:border-blue-600 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
             >
-              慢慢了解
+              看表情包
               <ArrowDown size={18} />
             </a>
           </motion.div>
@@ -157,8 +157,8 @@ export default function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           >
             <img
-              src="/images/riti-sleep.png"
-              alt="栗提 Riti 睡在温暖房间里的插画"
+              src="/images/riti-brand/banner.png"
+              alt="栗提 Riti 表情包横幅"
               className="aspect-[16/9] h-full w-full rounded-md object-cover"
             />
             <div className="pointer-events-none absolute inset-2 rounded-md ring-1 ring-white/60" />

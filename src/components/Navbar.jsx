@@ -3,12 +3,12 @@ import { Mail, Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "首页", href: "#home", id: "home" },
-  { label: "介绍", href: "#介绍", id: "介绍" },
-  { label: "正在做", href: "#正在做", id: "正在做" },
-  { label: "作品入口", href: "#作品入口", id: "作品入口" },
+  { label: "栗提是谁", href: "#栗提是谁", id: "栗提是谁" },
+  { label: "表情包", href: "#表情包", id: "表情包" },
+  { label: "栗提世界", href: "#栗提世界", id: "栗提世界" },
+  { label: "小游戏", href: "#Demo实验室", id: "Demo实验室" },
   { label: "平台入口", href: "#平台", id: "平台" },
-  { label: "实验室", href: "#Demo实验室", id: "Demo实验室" },
-  { label: "联系我", href: "#联系我", id: "联系我" },
+  { label: "创作者", href: "#创作者", id: "创作者" },
 ];
 
 export default function Navbar() {
@@ -77,11 +77,11 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#联系我"
+            href="#平台"
             className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
           >
             <Mail size={17} strokeWidth={2} />
-            <span className="hidden sm:inline">联系我</span>
+            <span className="hidden sm:inline">找到栗提</span>
           </a>
 
           <button

@@ -7,35 +7,35 @@ const platforms = [
   {
     icon: Video,
     name: "B站",
-    status: "栗提Riti，准备开始更新教学 / 创作相关内容",
+    status: "主页已准备为栗提Riti，后续适合发布制作过程、教程、小游戏和短动画。",
     href: "https://space.bilibili.com/502064186?spm_id_from=333.1007.0.0",
     action: "打开主页",
   },
   {
     icon: Radio,
     name: "公众号",
-    status: "栗提Riti，已发布文章《一只喜欢独处的花栗鼠，为什么会有个考拉朋友？》",
-    searchText: "栗提Riti",
-    action: "复制名称",
-  },
-  {
-    icon: Video,
-    name: "视频号",
-    status: "栗提Riti，后续会放短视频、过程记录和表情包相关内容",
+    status: "公众号名：栗提Riti。适合发角色小故事、创作复盘和比较安静的长内容。",
     searchText: "栗提Riti",
     action: "复制名称",
   },
   {
     icon: Search,
     name: "微信表情包",
-    status: "微信表情包可搜索：栗提Riti",
+    status: "可以搜索：栗提Riti。这里是最适合让别人先认识栗提的入口。",
     searchText: "栗提Riti",
     action: "复制搜索名",
   },
   {
+    icon: Video,
+    name: "视频号",
+    status: "后续可以放表情包展示、短动画、角色设定和轻量创作记录。",
+    searchText: "栗提Riti",
+    action: "复制名称",
+  },
+  {
     icon: ExternalLink,
     name: "小红书 / 抖音",
-    status: "准备统一为栗提Riti，后续接真实主页链接",
+    status: "准备统一为栗提Riti，用来承接更轻、更容易传播的图片和短视频内容。",
     searchText: "栗提Riti",
     action: "复制名称",
   },
@@ -55,12 +55,12 @@ export default function PlatformsSection() {
   }
 
   return (
-    <section id="平台" className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-8 lg:py-20">
+    <section id="平台" className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
       <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
         <div>
-          <SectionTitle eyebrow="平台入口" title="分散的平台，先收在一个地方" />
+          <SectionTitle eyebrow="平台入口" title="在哪里找到栗提" />
           <p className="-mt-2 max-w-sm text-sm leading-7 text-muted">
-            有真实链接的地方可以直接打开；暂时没有公开链接的平台，先提供可复制的搜索名称。
+            真实链接可以直接打开；暂时没有公开链接的平台，先提供统一搜索名。这样别人从 B站、公众号、表情包或短视频平台过来，都能知道栗提是谁。
           </p>
         </div>
 
