@@ -157,8 +157,8 @@ export default function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           >
             <img
-              src="/images/riti-brand/banner.png"
-              alt="栗提 Riti 表情包横幅"
+              src="/images/riti-sleep.png"
+              alt="栗提 Riti 睡觉场景"
               className="aspect-[16/9] h-full w-full rounded-md object-cover"
             />
             <div className="pointer-events-none absolute inset-2 rounded-md ring-1 ring-white/60" />
