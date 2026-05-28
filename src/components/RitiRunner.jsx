@@ -245,7 +245,7 @@ export default function RitiRunner() {
     <div className="rounded-lg border border-line bg-white p-3 shadow-card">
       <div className="mb-3 flex items-center justify-between gap-3 px-1">
         <div>
-          <p className="text-sm font-semibold text-blue-600">Mini Demo</p>
+          <p className="text-sm font-semibold text-blue-600">栗提跑酷小实验</p>
           <h3 className="text-xl font-semibold text-ink">栗提跑酷</h3>
         </div>
         <div className="rounded-md bg-blue-50 px-3 py-1 text-sm font-semibold text-blue-700">Score {score}</div>

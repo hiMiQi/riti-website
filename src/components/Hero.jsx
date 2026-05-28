@@ -42,8 +42,8 @@ function DraggableSticker({ src, alt, className, animate, transition, positions 
 export default function Hero() {
   const [glow, setGlow] = useState({ x: 50, y: 42 });
   const { scrollYProgress } = useScroll();
-  const imageY = useTransform(scrollYProgress, [0, 0.22], [0, -28]);
-  const textY = useTransform(scrollYProgress, [0, 0.22], [0, 18]);
+  const imageY = useTransform(scrollYProgress, [0, 0.22], [0, -18]);
+  const textY = useTransform(scrollYProgress, [0, 0.22], [0, 10]);
 
   function handlePointerMove(event) {
     const rect = event.currentTarget.getBoundingClientRect();
@@ -57,7 +57,7 @@ export default function Hero() {
     <section
       id="home"
       onPointerMove={handlePointerMove}
-      className="relative flex min-h-[calc(100vh-64px)] w-full items-center overflow-hidden px-5 py-12 sm:px-8 lg:py-16"
+      className="relative flex min-h-[calc(100vh-64px)] w-full items-center overflow-hidden px-5 py-10 sm:px-8 sm:py-12 lg:py-16"
       style={{
         "--hero-glow-x": `${glow.x}%`,
         "--hero-glow-y": `${glow.y}%`,
@@ -70,75 +70,53 @@ export default function Hero() {
           top: "var(--hero-glow-y)",
         }}
       />
-      <div className="pointer-events-none absolute inset-x-8 top-8 h-px bg-gradient-to-r from-transparent via-blue-200/70 to-transparent" />
-
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-9 lg:grid-cols-[0.78fr_1.22fr] lg:gap-14">
-        <motion.div className="max-w-xl" style={{ y: textY }}>
-          <motion.div
-            className="mb-6 inline-flex items-center gap-3 rounded-full border border-blue-100 bg-white/70 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm backdrop-blur-md"
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
+        <motion.div className="max-w-2xl lg:max-w-xl" style={{ y: textY }}>
+          <motion.p
+            className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.08 }}
           >
-            <span className="h-2 w-2 rounded-full bg-blue-600" />
-            原创 IP · 表情包 / 故事 / 小游戏
-          </motion.div>
+            栗提 Riti
+          </motion.p>
 
           <motion.h1
-            className="text-5xl font-bold leading-[1.08] text-ink sm:text-6xl lg:text-7xl"
+            className="mt-5 text-4xl font-bold leading-[1.08] text-ink sm:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.58, delay: 0.16 }}
           >
-            栗提 Riti
-            <span className="mt-2 block text-blue-700">慢慢长大的原创角色</span>
+            栗提 Riti 的森林观察日记
           </motion.h1>
 
           <motion.p
-            className="mt-6 max-w-lg text-base leading-8 text-muted sm:text-lg"
+            className="mt-6 max-w-xl text-base leading-8 text-muted sm:text-lg"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.58, delay: 0.24 }}
           >
-            一只喜欢独处、认真收藏小灵感的花栗鼠。这里收集栗提的表情包、故事、小游戏和世界设定，也记录它背后的创作者。
+            一只认真吃饭、认真生活的小松鼠，带着相机、米饭和一点点中二，记录森林里的小事。
           </motion.p>
 
           <motion.div
-            className="mt-7 grid max-w-lg grid-cols-3 gap-3"
+            className="mt-8 flex flex-col gap-4 sm:flex-row"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.58, delay: 0.28 }}
-          >
-            {[
-              ["Sticker", "微信表情包"],
-              ["Story", "角色小故事"],
-              ["Game", "栗提小游戏"],
-            ].map(([label, value]) => (
-              <div key={label} className="rounded-lg border border-line bg-white/72 px-4 py-3 shadow-sm backdrop-blur-md">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-600">{label}</p>
-                <p className="mt-1 text-sm font-semibold text-ink">{value}</p>
-              </div>
-            ))}
-          </motion.div>
-
-          <motion.div
-            className="mt-9 flex flex-col gap-4 sm:flex-row"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.58, delay: 0.32 }}
+            transition={{ duration: 0.58, delay: 0.3 }}
           >
             <a
-              href="#栗提是谁"
+              href="#味道日记"
               className="inline-flex h-12 items-center justify-center gap-3 rounded-lg bg-blue-600 px-7 text-base font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
             >
-              认识栗提
+              翻翻今天的日记
               <ExternalLink size={18} />
             </a>
             <a
-              href="#表情包"
+              href="#项目展示"
               className="inline-flex h-12 items-center justify-center gap-3 rounded-lg border border-blue-500/40 bg-white/70 px-7 text-base font-semibold text-blue-700 shadow-sm backdrop-blur-md transition hover:border-blue-600 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
             >
-              看表情包
+              看看栗提最近在忙什么
               <ArrowDown size={18} />
             </a>
           </motion.div>
@@ -152,14 +130,15 @@ export default function Hero() {
           transition={{ duration: 0.68, delay: 0.2, ease: "easeOut" }}
         >
           <motion.div
-            className="relative overflow-hidden rounded-lg border border-line bg-white/75 p-2 shadow-soft backdrop-blur-md"
-            animate={{ y: [0, -7, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            className="relative mx-auto w-full max-w-3xl overflow-hidden rounded-lg border border-line bg-white/75 p-2 shadow-soft backdrop-blur-md"
+            animate={{ y: [0, -5, 0] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           >
             <img
               src="/images/riti-sleep.png"
               alt="栗提 Riti 睡觉场景"
-              className="aspect-[16/9] h-full w-full rounded-md object-cover"
+              className="aspect-[16/9] max-h-[42vh] w-full rounded-md object-cover sm:max-h-[48vh] lg:max-h-none"
+              decoding="async"
             />
             <div className="pointer-events-none absolute inset-2 rounded-md ring-1 ring-white/60" />
           </motion.div>
@@ -190,11 +169,6 @@ export default function Hero() {
             transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
             positions={[{ x: 0, y: 0 }, { x: 16, y: 18 }, { x: -10, y: -12 }]}
           />
-
-          <div className="absolute -bottom-5 left-6 hidden rounded-lg border border-line bg-white/68 px-4 py-3 text-sm font-semibold text-ink shadow-card backdrop-blur-md md:block">
-            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-blue-600" />
-            scroll to explore
-          </div>
         </motion.div>
       </div>
     </section>

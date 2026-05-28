@@ -23,16 +23,16 @@ export const projects = [
         stack: ["React", "Vite", "Tailwind", "Framer Motion"],
       },
       {
-        title: "互动实验室",
-        text: "把轻量小游戏和互动 Demo 收成独立入口，保持首页简洁，同时保留一点可玩的记忆点。",
-        href: "#Demo实验室",
-        label: "打开实验室",
+        title: "小游戏实验",
+        text: "把轻量小游戏和互动内容收成独立入口，保持首页简洁，同时保留一点可玩的记忆点。",
+        href: "#小游戏实验",
+        label: "打开小游戏",
         status: "已上线",
         stack: ["Hash Route", "Cards", "Motion"],
       },
       {
         title: "栗提跑酷 Mini Game",
-        text: "一个类似 Chrome Dino 的跑酷 Demo，包含跳跃、障碍、碰撞、计分和重开流程。",
+        text: "一个类似 Chrome Dino 的跑酷小游戏，包含跳跃、障碍、碰撞、计分和重开流程。",
         href: "#/games/riti-run",
         label: "开始玩",
         status: "可玩",
@@ -80,8 +80,8 @@ export const projects = [
     nextTitle: "项目亮点",
     nextDescription: "这些内容适合作为前端方向的展示重点。",
     next: ["响应式页面结构", "清晰的组件拆分", "克制的 Framer Motion 动效", "小游戏与工具型交互"],
-    primaryAction: { label: "去互动实验室", href: "#Demo实验室" },
-    secondaryAction: { label: "回作品入口", href: "#作品入口" },
+    primaryAction: { label: "去小游戏实验", href: "#小游戏实验" },
+    secondaryAction: { label: "回项目展示", href: "#项目展示" },
   },
   {
     id: "visual",
@@ -154,7 +154,7 @@ export const projects = [
     nextTitle: "视觉亮点",
     nextDescription: "这些内容适合体现数字媒体和 UI 交互方向的能力。",
     next: ["页面构图与留白", "色彩系统", "动效节奏", "作品封面统一性"],
-    primaryAction: { label: "看平台入口", href: "#平台" },
+    primaryAction: { label: "看平台入口", href: "#找到栗提" },
     secondaryAction: { label: "联系我", href: "#联系我" },
   },
   {
@@ -228,7 +228,7 @@ export const projects = [
     nextTitle: "IP 亮点",
     nextDescription: "这个方向强调角色识别度和内容延展性。",
     next: ["稳定的角色性格", "可复用的表情场景", "温暖但不幼稚的视觉调性", "可扩展到游戏和短视频"],
-    primaryAction: { label: "看平台入口", href: "#平台" },
+    primaryAction: { label: "看平台入口", href: "#找到栗提" },
     secondaryAction: { label: "看首页", href: "#home" },
   },
   {
@@ -302,8 +302,8 @@ export const projects = [
     nextTitle: "内容亮点",
     nextDescription: "这个方向适合建立长期更新的个人资料库。",
     next: ["学习路线清晰", "资料可复用", "文章有个人声音", "项目复盘能体现成长"],
-    primaryAction: { label: "看平台入口", href: "#平台" },
-    secondaryAction: { label: "回作品入口", href: "#作品入口" },
+    primaryAction: { label: "看平台入口", href: "#找到栗提" },
+    secondaryAction: { label: "回项目展示", href: "#项目展示" },
   },
 ];
 

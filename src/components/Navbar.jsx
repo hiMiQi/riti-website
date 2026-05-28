@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
-import { Mail, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "首页", href: "#home", id: "home" },
-  { label: "栗提是谁", href: "#栗提是谁", id: "栗提是谁" },
-  { label: "表情包", href: "#表情包", id: "表情包" },
-  { label: "栗提世界", href: "#栗提世界", id: "栗提世界" },
-  { label: "小游戏", href: "#Demo实验室", id: "Demo实验室" },
-  { label: "平台入口", href: "#平台", id: "平台" },
-  { label: "创作者", href: "#创作者", id: "创作者" },
+  { label: "日记", href: "#味道日记", id: "味道日记" },
+  { label: "项目", href: "#项目展示", id: "项目展示" },
+  { label: "关于栗提", href: "#栗提是谁", id: "栗提是谁" },
 ];
 
 export default function Navbar() {
@@ -71,19 +68,11 @@ export default function Navbar() {
           栗提 Riti
         </a>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-ink/76 lg:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium text-ink/76 lg:flex">
           {navItems.map((item) => renderLink(item))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="#平台"
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-blue-100"
-          >
-            <Mail size={17} strokeWidth={2} />
-            <span className="hidden sm:inline">找到栗提</span>
-          </a>
-
+        <div className="flex items-center lg:hidden">
           <button
             type="button"
             aria-label={menuOpen ? "关闭导航菜单" : "打开导航菜单"}

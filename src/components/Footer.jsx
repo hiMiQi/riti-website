@@ -9,7 +9,9 @@ export default function Footer() {
             <PenLine size={17} />
             栗提 Riti
           </p>
-          <p className="mt-2 text-sm leading-6 text-muted">栗提 Riti 的原创 IP 首页，收集表情包、故事、小游戏、平台入口和幕后创作记录。</p>
+          <p className="mt-2 text-sm leading-6 text-muted">
+            一只慢热花栗鼠的原创 IP 网站。收集表情包、角色设定、森林故事、平台入口和少量幕后创作记录。
+          </p>
         </div>
         <a
           href="mailto:ctrlcvv@163.com"

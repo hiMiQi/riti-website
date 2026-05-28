@@ -5,12 +5,16 @@ import SectionTitle from "./SectionTitle.jsx";
 
 export default function LabSection() {
   return (
-    <section id="Demo实验室" className="border-y border-line bg-cream/70">
+    <section id="小游戏实验" className="border-y border-line bg-cream/70">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
         <SectionTitle
-          eyebrow="互动实验室"
-          title="小游戏和互动 Demo 都放在这里，点开就能玩"
+          eyebrow="小游戏实验"
+          title="栗提不只停在图片里，也会钻进一些能点开的小游戏"
         />
+
+        <div className="mb-7 max-w-3xl rounded-lg border border-blue-100 bg-white/78 p-5 text-sm leading-7 text-muted shadow-card">
+          这些小游戏是栗提 IP 的轻量延展：跑酷负责消化 deadline 和 bug，打字负责记录学习手感，翻牌和消除负责把森林里的栗子、星星和小道具慢慢放进去。
+        </div>
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {games.map((game, index) => {
@@ -47,7 +51,7 @@ export default function LabSection() {
                   ))}
                 </div>
                 <div className="mt-5 inline-flex translate-y-1 items-center gap-2 text-sm font-semibold text-blue-600 opacity-80 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                  进入页面
+                  开始玩一局
                   <ArrowRight size={16} />
                 </div>
               </motion.a>

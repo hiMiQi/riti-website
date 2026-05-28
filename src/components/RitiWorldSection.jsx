@@ -5,18 +5,18 @@ import SectionTitle from "./SectionTitle.jsx";
 const worldItems = [
   {
     icon: Map,
-    title: "栗提森林",
-    text: "栗提住在一个不太吵的小森林里。这里可以慢慢扩展成地图、房间、道具、朋友和节日事件。",
+    title: "栗提小厨房",
+    text: "这里是栗提把心情慢慢揉进生活的地方：有阳光、奶油、浆果和刚刚装饰好的小蛋糕。",
   },
   {
     icon: Boxes,
-    title: "道具与小物",
-    text: "栗子、枕头、星星被子、小蘑菇、信封和花束都可以成为角色故事里的固定道具。",
+    title: "味道与小物",
+    text: "裱花袋、玻璃碗、黄色围巾、浆果和小餐桌，都是栗提的生活线索。它们让日记有具体的温度。",
   },
   {
     icon: BookOpen,
     title: "朋友与故事",
-    text: "栗提可以有考拉朋友、学习伙伴、创作搭档。故事不需要宏大，日常的小情绪更容易被记住。",
+    text: "栗提也会把做好的蛋糕分给朋友。故事不一定很大，但可以很稳定：一起吃饭、一起聊天、一起把今天记下来。",
   },
 ];
 
@@ -25,20 +25,20 @@ export default function RitiWorldSection() {
     <section id="栗提世界" className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
       <SectionTitle
         eyebrow="栗提世界"
-        title="把角色、道具和故事慢慢收成一个小世界"
+        title="它生活在一个安静、有光、可以慢慢收藏心情的小森林"
         action={
           <a
-            href="#Demo实验室"
+            href="#小游戏实验"
             className="hidden items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700 sm:inline-flex"
           >
-            看栗提小游戏
+            玩栗提小游戏
             <ArrowRight size={18} />
           </a>
         }
       />
 
-      <div className="grid gap-7 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div className="grid gap-4">
+      <div className="grid gap-7 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
+        <div className="grid gap-4 lg:order-2">
           {worldItems.map((item, index) => {
             const Icon = item.icon;
 
@@ -66,7 +66,7 @@ export default function RitiWorldSection() {
         </div>
 
         <motion.div
-          className="grid gap-4"
+          className="grid gap-4 lg:order-1"
           initial={{ opacity: 0, y: 22 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -74,15 +74,17 @@ export default function RitiWorldSection() {
         >
           <div className="overflow-hidden rounded-lg border border-line bg-white p-3 shadow-card">
             <img
-              src="/images/riti-brand/world-props.png"
-              alt="栗提世界道具设定"
+              src="/images/riti-brand/riti-cake-kitchen.png"
+              alt="栗提在厨房装饰蛋糕"
               className="aspect-[4/3] w-full rounded-md object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="rounded-lg border border-line bg-white p-5 shadow-card">
-            <p className="text-sm font-semibold text-blue-600">下一步可以做成</p>
+            <p className="text-sm font-semibold text-blue-600">生活场景的核心</p>
             <p className="mt-2 text-sm leading-7 text-muted">
-              栗提图鉴、角色关系页、表情包合集、节日特别图和小游戏入口。现在首页先把方向立起来，后续每个入口都能单独长大。
+              栗提的世界不靠宏大设定取胜，而靠可重复出现的生活场景、固定情绪和稳定氛围。厨房、蛋糕和味道日记，会把角色带回一个具体的生活瞬间。
             </p>
           </div>
         </motion.div>

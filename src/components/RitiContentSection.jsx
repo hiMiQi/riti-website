@@ -13,23 +13,23 @@ const stickers = [
 const contentTypes = [
   {
     icon: Sticker,
-    title: "微信表情包",
-    text: "适合聊天里表达晚安、开心、鼓励、摸鱼和一点点吐槽。微信表情包可以搜索：栗提Riti。",
+    title: "聊天里的小情绪",
+    text: "晚安、开心、摸鱼、鼓励和一点点吐槽，都可以交给栗提。它适合出现在不想说太多、但又想认真回应的聊天里。",
   },
   {
     icon: PenLine,
-    title: "角色小故事",
-    text: "围绕独处、陪伴、学习压力和创作日常写短篇内容，让栗提不只是形象，也有性格。",
+    title: "有性格的表情",
+    text: "栗提不是单张贴纸，而是一套稳定的反应方式：慢半拍、很认真、偶尔装聪明，最后又会乖乖把心情放好。",
   },
   {
     icon: PlayCircle,
-    title: "短视频内容",
-    text: "后续可以把表情包制作过程、角色设定和小动画发到 B站、视频号、小红书和抖音。",
+    title: "可以被继续讲述",
+    text: "每张表情背后都能延展成一段小故事：为什么它抱着枕头，为什么它突然得意，为什么它总是认真说晚安。",
   },
   {
     icon: MessageCircle,
-    title: "日常互动",
-    text: "小游戏、投票、留言主题和节日图都可以成为栗提和大家见面的方式。",
+    title: "搜索名保持统一",
+    text: "微信表情包、公众号和短视频平台都围绕“栗提Riti”展开，让别人记住一个名字，就能找到同一个角色。",
   },
 ];
 
@@ -50,8 +50,8 @@ export default function RitiContentSection() {
     <section id="表情包" className="border-y border-line bg-cream/70">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
         <SectionTitle
-          eyebrow="表情包与内容"
-          title="先从好记、好用、能传播的内容开始"
+          eyebrow="表情包"
+          title="让栗提先进入聊天，再慢慢进入故事"
           action={
             <button
               type="button"
@@ -59,14 +59,14 @@ export default function RitiContentSection() {
               className="hidden h-10 items-center justify-center gap-2 rounded-lg border border-blue-500/35 bg-white px-4 text-sm font-semibold text-blue-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow-glow sm:inline-flex"
             >
               {copied ? <Check size={16} /> : <Copy size={16} />}
-              {copied ? "已复制" : "复制搜索名"}
+              {copied ? "已复制" : "复制栗提Riti"}
             </button>
           }
         />
 
-        <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div className="grid gap-7 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <motion.div
-            className="rounded-lg border border-line bg-white p-5 shadow-card"
+            className="rounded-lg border border-line bg-white p-5 shadow-card lg:sticky lg:top-24"
             initial={{ opacity: 0, y: 22 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -80,13 +80,22 @@ export default function RitiContentSection() {
                   animate={{ y: [0, index % 2 ? 7 : -7, 0] }}
                   transition={{ duration: 5 + index * 0.35, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <img src={item.src} alt={item.alt} className="h-full w-full object-contain" />
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </motion.div>
               ))}
             </div>
             <p className="mt-4 text-sm leading-7 text-muted">
-              表情包不用一次出现很多，首页只保留几张作为识别点。更多内容可以后续做成独立的“表情包图鉴”页面。
+              栗提的表情不追求夸张刷屏，而是把日常情绪做得更柔和：一句晚安、一点鼓励、一个懂你的摸鱼瞬间，都能让聊天轻一点。
             </p>
+            <div className="mt-4 rounded-lg bg-blue-50/70 px-4 py-3 text-sm font-semibold text-blue-700">
+              微信表情包搜索：栗提Riti
+            </div>
           </motion.div>
 
           <div className="grid gap-4 sm:grid-cols-2">

@@ -127,7 +127,7 @@ export default function Match3Game() {
     <div className="rounded-lg border border-line bg-white p-5 shadow-card">
       <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-sm font-semibold text-blue-600">Playable Demo</p>
+          <p className="text-sm font-semibold text-blue-600">可玩小实验</p>
           <h2 className="text-2xl font-semibold text-ink">消消乐</h2>
           <p className="mt-1 text-sm leading-6 text-muted">{message}</p>
         </div>

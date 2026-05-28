@@ -77,7 +77,7 @@ export default function DataDashboardPage() {
 
     return [
       { label: "投入时长", value: `${totalHours}h`, helper: "学习与创作时间", icon: CalendarDays },
-      { label: "产出数量", value: totalOutput, helper: "作品 / 笔记 / Demo", icon: BarChart3 },
+      { label: "产出数量", value: totalOutput, helper: "作品 / 笔记 / 小实验", icon: BarChart3 },
       { label: "专注指数", value: `${averageFocus}%`, helper: "平均完成质量", icon: TrendingUp },
       { label: "主要方向", value: bestType ?? "-", helper: "当前投入最高", icon: PieChart },
     ];

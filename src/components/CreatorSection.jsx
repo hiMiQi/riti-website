@@ -6,24 +6,24 @@ const creatorItems = [
   {
     icon: Code2,
     title: "前端与交互",
-    text: "用 React、页面搭建和动效练习，把栗提相关内容做成能打开、能点击、能继续迭代的网站。",
+    text: "把栗提做成能打开、能点击、能继续更新的网站，而不是只停留在几张图片里。",
   },
   {
     icon: PenLine,
     title: "视觉与内容",
-    text: "整理 UI 练习、数字媒体作品、短动画、公众号文章和平台内容，让角色和作品互相支撑。",
+    text: "负责整理角色设定、表情包、短动画和文字内容，让栗提的表达保持统一。",
   },
   {
     icon: MapPin,
     title: "正在福州学习与创作",
-    text: "目前还在探索方向，所以网站会保留成长中的痕迹：作品、笔记、小游戏和栗提都会一点点完善。",
+    text: "这是一个仍在生长的原创 IP。网站会保留成长痕迹，但主线始终围绕栗提展开。",
   },
 ];
 
 export default function CreatorSection() {
   return (
     <section id="创作者" className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
-      <SectionTitle eyebrow="创作者" title="栗提背后，也有一个正在学习和创作的人" />
+      <SectionTitle eyebrow="创作者" title="栗提背后，是一个持续把角色做完整的人" />
 
       <div className="grid gap-7 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
         <motion.div
@@ -34,11 +34,11 @@ export default function CreatorSection() {
           transition={{ duration: 0.45 }}
         >
           <p className="text-base leading-8 text-muted">
-            这个网站不会把学历和标签放在最前面，而是先让别人看到栗提这个角色本身。背后的创作者负责把它做成表情包、页面、故事、小游戏和持续更新的内容。
+            创作者不站在最前面，因为栗提才是被记住的主角。背后的工作，是把角色设定、网页、表情包、小游戏和平台内容慢慢统一起来，让它看起来像一个真正可以长期更新的 IP。
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="#作品入口"
+              href="#项目展示"
               className="inline-flex h-11 items-center justify-center rounded-lg border border-line bg-white px-5 text-sm font-semibold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-700"
             >
               看幕后作品

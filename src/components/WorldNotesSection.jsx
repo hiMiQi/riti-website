@@ -29,15 +29,15 @@ export default function WorldNotesSection() {
         <div>
           <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-blue-600">
             <PenLine size={17} />
-            下一阶段
+            继续更新
           </p>
-          <h2 className="text-2xl font-semibold text-ink sm:text-3xl">让栗提从“有形象”继续变成“有内容”</h2>
+          <h2 className="text-2xl font-semibold text-ink sm:text-3xl">栗提会继续长大，但不会急着变得很吵</h2>
           <p className="mt-4 max-w-3xl text-base leading-8 text-muted">
-            现在首页已经把栗提的基本方向搭起来了：角色介绍、表情包入口、世界设定、小游戏、平台入口和幕后创作记录。后续最值得补的是真实平台链接、更多表情包图鉴、栗提小故事，以及一个更完整的栗提跑酷独立页面。
+            接下来会继续补充表情包图鉴、栗提森林里的小故事、节日特别图和更完整的小游戏体验。更新节奏可以慢一点，但每一次都应该让这个角色更清楚、更好记。
           </p>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            {["表情包图鉴", "角色小故事", "小游戏页面"].map((item) => (
+            {["表情包图鉴", "森林小故事", "节日特别图"].map((item) => (
               <div key={item} className="rounded-lg border border-line bg-white px-4 py-3 text-sm font-semibold text-ink">
                 <span className="mr-2 inline-block h-2 w-2 rounded-full bg-blue-600" />
                 {item}
@@ -53,10 +53,10 @@ export default function WorldNotesSection() {
               看表情包
             </a>
             <a
-              href="#平台"
+              href="#找到栗提"
               className="inline-flex h-11 items-center justify-center rounded-lg border border-line bg-white px-5 text-sm font-semibold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-700"
             >
-              查看平台入口
+              找到栗提
             </a>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function WorldNotesSection() {
             </div>
             <div>
               <p className="text-sm font-semibold text-ink">联系与合作</p>
-              <p className="mt-1 text-sm text-muted">如果想聊栗提、表情包、前端页面或视觉创作，可以从邮箱开始。</p>
+              <p className="mt-1 text-sm text-muted">如果想聊栗提、表情包、角色联动或网站创作，可以从邮箱开始。</p>
             </div>
           </div>
 

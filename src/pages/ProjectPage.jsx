@@ -10,9 +10,9 @@ export default function ProjectPage({ projectId }) {
     return (
       <main className="min-h-screen bg-white px-5 py-10 sm:px-8">
         <div className="mx-auto max-w-4xl">
-          <a href="#作品入口" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
+          <a href="#项目展示" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
             <ArrowLeft size={17} />
-            回到作品入口
+            回到项目展示
           </a>
           <h1 className="mt-8 text-4xl font-semibold text-ink">没有找到这个作品分类</h1>
         </div>
@@ -30,9 +30,9 @@ export default function ProjectPage({ projectId }) {
       transition={{ duration: 0.42 }}
     >
       <div className="mx-auto max-w-6xl">
-        <a href="#作品入口" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
+        <a href="#项目展示" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
           <ArrowLeft size={17} />
-          回到作品入口
+          回到项目展示
         </a>
 
         <section className="mt-8 grid gap-7 rounded-lg border border-line bg-cream/70 p-6 shadow-card sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">

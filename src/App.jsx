@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import CreatorSection from "./components/CreatorSection.jsx";
 import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero.jsx";
+import HomeJournalSection from "./components/HomeJournalSection.jsx";
+import HomePhotographySection from "./components/HomePhotographySection.jsx";
 import LabSection from "./components/LabSection.jsx";
 import Navbar from "./components/Navbar.jsx";
 import PlatformsSection from "./components/PlatformsSection.jsx";
@@ -85,13 +87,15 @@ export default function App() {
           <Navbar />
           <main>
             <Hero />
+            <HomeJournalSection />
             <RitiIdentitySection />
+            <ProjectsSection />
+            <HomePhotographySection />
             <RitiContentSection />
             <RitiWorldSection />
             <LabSection />
             <PlatformsSection />
             <CreatorSection />
-            <ProjectsSection />
             <WorldNotesSection />
           </main>
           <Footer />

@@ -6,52 +6,75 @@ const identityCards = [
   {
     icon: BadgeCheck,
     title: "角色定位",
-    text: "栗提 Riti 是一只喜欢独处、慢热但好奇心很强的花栗鼠。它适合作为表情包、短故事、小游戏和创作内容里的固定主角。",
+    text: "栗提 Riti 是一只慢热、认真、喜欢独处的原创花栗鼠。它不负责吵闹登场，更像一个会陪你把日子放慢一点的小伙伴。",
   },
   {
     icon: Sparkles,
     title: "性格关键词",
-    text: "古怪、开朗、爱吐槽、脑洞大。它不需要一直热闹，但会认真观察生活里的小细节。",
+    text: "爱收集、会吐槽、有点古怪，也很容易被小事打动。它的可爱来自真实反应，而不是一直卖萌。",
   },
   {
     icon: Palette,
     title: "视觉识别",
-    text: "大尾巴、虎牙、黄色三角围巾和栗色毛发是主要记忆点。整体可爱但不低龄，适合做长期 IP。",
+    text: "栗色毛发、大尾巴、虎牙和黄色三角围巾是第一眼记忆点。整体保持温暖、干净、不过度低龄。",
   },
 ];
 
 export default function RitiIdentitySection() {
   return (
     <section id="栗提是谁" className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:py-24">
-      <SectionTitle eyebrow="栗提是谁" title="一个慢慢长大的原创角色" />
+      <SectionTitle eyebrow="栗提是谁" title="先记住它：黄色围巾、大尾巴，和一点慢热的认真" />
 
-      <div className="grid gap-7 lg:grid-cols-[0.94fr_1.06fr] lg:items-center">
-        <motion.div
-          className="overflow-hidden rounded-lg border border-line bg-white p-3 shadow-card"
-          initial={{ opacity: 0, y: 22 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-        >
-          <img
-            src="/images/riti-brand/standard-card.png"
-            alt="栗提 Riti 角色标准设定图"
-            className="aspect-[4/3] w-full rounded-md object-cover"
-          />
-        </motion.div>
-
-        <div>
+      <div className="grid gap-7 lg:grid-cols-[0.94fr_1.06fr] lg:items-start">
+        <div className="grid gap-5 lg:sticky lg:top-24">
           <motion.p
-            className="max-w-2xl text-lg leading-9 text-muted"
+            className="max-w-xl text-base leading-8 text-muted sm:text-lg"
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.45 }}
           >
-            这个网站现在会以栗提为主角：表情包、角色设定、小故事、小游戏和平台内容都会围绕它展开。创作者信息会穿插在后面，用来说明栗提从哪里来、正在怎么被做出来。
+            栗提不是那种一出场就把气氛撑满的角色。它更像一个安静的观察者：会把栗子、便签、晚安和小情绪收进自己的森林，再用表情包、故事和小游戏慢慢递给你。
           </motion.p>
 
-          <div className="mt-8 grid gap-4">
+          <motion.div
+            className="overflow-hidden rounded-lg border border-line bg-white p-3 shadow-card"
+            initial={{ opacity: 0, y: 22 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: 0.04 }}
+          >
+            <img
+              src="/images/riti-brand/standard-card.png"
+              alt="栗提 Riti 角色标准设定图"
+              className="aspect-[3/2] w-full rounded-md object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          </motion.div>
+        </div>
+
+        <div>
+          <motion.div
+            className="grid gap-3 rounded-lg border border-blue-100 bg-blue-50/55 p-4 sm:grid-cols-3"
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.42, delay: 0.04 }}
+          >
+            {[
+              ["常住地", "栗提森林"],
+              ["随身物", "小背包 / 黄色围巾"],
+              ["表达方式", "晚安、鼓励和轻轻吐槽"],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-md bg-white/76 px-4 py-3 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-blue-600">{label}</p>
+                <p className="mt-1 text-sm font-semibold text-ink">{value}</p>
+              </div>
+            ))}
+          </motion.div>
+
+          <div className="mt-5 grid gap-4">
             {identityCards.map((card, index) => {
               const Icon = card.icon;
 

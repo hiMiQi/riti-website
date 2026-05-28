@@ -60,7 +60,7 @@ export default function MemoryCards() {
     <div className="rounded-lg border border-line bg-white p-5 shadow-card">
       <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-sm font-semibold text-blue-600">Playable Demo</p>
+          <p className="text-sm font-semibold text-blue-600">可玩小实验</p>
           <h2 className="text-2xl font-semibold text-ink">记忆翻牌</h2>
           <p className="mt-1 text-sm leading-6 text-muted">翻开两张，相同就留下。已配对 {doneCount}/8。</p>
         </div>

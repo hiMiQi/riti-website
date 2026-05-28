@@ -28,9 +28,9 @@ export default function GamePage({ gameId }) {
     return (
       <main className="min-h-screen bg-white px-5 py-10 sm:px-8">
         <div className="mx-auto max-w-4xl">
-          <a href="#Demo实验室" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
+          <a href="#小游戏实验" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
             <ArrowLeft size={17} />
-            回到互动实验室
+            回到小游戏实验
           </a>
           <h1 className="mt-8 text-4xl font-semibold text-ink">没有找到这个小游戏</h1>
         </div>
@@ -49,9 +49,9 @@ export default function GamePage({ gameId }) {
       transition={{ duration: 0.42 }}
     >
       <div className="mx-auto max-w-5xl">
-        <a href="#Demo实验室" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
+        <a href="#小游戏实验" className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
           <ArrowLeft size={17} />
-          回到互动实验室
+          回到小游戏实验
         </a>
 
         <div className="flex min-h-[calc(100vh-120px)] flex-col justify-center py-8">
@@ -79,8 +79,8 @@ export default function GamePage({ gameId }) {
             ) : (
               <div className="flex min-h-[36vh] items-center justify-center rounded-lg border border-line bg-white p-8 text-center shadow-card">
                 <div>
-                  <p className="text-sm font-semibold text-blue-600">Coming soon</p>
-                  <h2 className="mt-3 text-2xl font-semibold text-ink">这个小游戏先作为页面入口预留</h2>
+                  <p className="text-sm font-semibold text-blue-600">正在打磨玩法</p>
+                  <h2 className="mt-3 text-2xl font-semibold text-ink">这只栗提还在把规则写进树叶背面</h2>
                   <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-muted">
                     后续可以在这个页面里单独实现玩法，不会把所有游戏代码塞在首页。
                   </p>

@@ -123,7 +123,7 @@ export default function SnakeGame() {
     <div className="rounded-lg border border-line bg-white p-5 shadow-card">
       <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-sm font-semibold text-blue-600">Playable Demo</p>
+          <p className="text-sm font-semibold text-blue-600">可玩小实验</p>
           <h2 className="text-2xl font-semibold text-ink">贪吃蛇</h2>
           <p className="mt-1 text-sm leading-6 text-muted">方向键 / WASD 控制，吃到蓝色灵感点会变长。</p>
         </div>

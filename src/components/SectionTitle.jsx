@@ -1,6 +1,6 @@
 export default function SectionTitle({ eyebrow, title, action }) {
   return (
-    <div className="mb-6 flex items-end justify-between gap-4">
+    <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
       <div>
         <p className="mb-3 flex items-center gap-3 text-sm font-semibold text-ink">
           {eyebrow}

@@ -178,7 +178,7 @@ export default function TetrisGame() {
     <div className="rounded-lg border border-line bg-white p-5 shadow-card">
       <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-sm font-semibold text-blue-600">Playable Demo</p>
+          <p className="text-sm font-semibold text-blue-600">可玩小实验</p>
           <h2 className="text-2xl font-semibold text-ink">俄罗斯方块</h2>
           <p className="mt-1 text-sm leading-6 text-muted">方向键移动，上键旋转，空格快速下落。</p>
         </div>
