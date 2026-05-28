@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle.jsx";
 
 const stickers = [
-  { src: "/images/riti-brand/sticker-hello.png", alt: "栗提点赞表情" },
-  { src: "/images/riti-brand/sticker-laugh.png", alt: "栗提大笑表情" },
-  { src: "/images/riti-brand/sticker-sleepy.png", alt: "栗提晚安表情" },
-  { src: "/images/riti-brand/sticker-smart.png", alt: "栗提聪明表情" },
+  { src: `${import.meta.env.BASE_URL}images/riti-brand/sticker-hello.png`, alt: "栗提点赞表情" },
+  { src: `${import.meta.env.BASE_URL}images/riti-brand/sticker-laugh.png`, alt: "栗提大笑表情" },
+  { src: `${import.meta.env.BASE_URL}images/riti-brand/sticker-sleepy.png`, alt: "栗提晚安表情" },
+  { src: `${import.meta.env.BASE_URL}images/riti-brand/sticker-smart.png`, alt: "栗提聪明表情" },
 ];
 
 const contentTypes = [

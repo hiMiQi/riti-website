@@ -135,7 +135,7 @@ export default function Hero() {
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           >
             <img
-              src="/images/riti-sleep.png"
+              src={`${import.meta.env.BASE_URL}images/riti-sleep.png`}
               alt="栗提 Riti 睡觉场景"
               className="aspect-[16/9] max-h-[42vh] w-full rounded-md object-cover sm:max-h-[48vh] lg:max-h-none"
               decoding="async"
@@ -144,7 +144,7 @@ export default function Hero() {
           </motion.div>
 
           <DraggableSticker
-            src="/images/riti-thumb-cut.png"
+            src={`${import.meta.env.BASE_URL}images/riti-thumb-cut.png`}
             alt="栗提 Riti 表情贴纸"
             className="absolute -right-5 -top-8 hidden h-24 w-24 object-contain drop-shadow-[0_16px_28px_rgba(36,38,43,0.18)] md:block"
             animate={{ rotate: [4, -2, 4], y: [0, -5, 0] }}
@@ -153,7 +153,7 @@ export default function Hero() {
           />
 
           <DraggableSticker
-            src="/images/riti-pillow-cut.png"
+            src={`${import.meta.env.BASE_URL}images/riti-pillow-cut.png`}
             alt="抱着枕头的栗提贴纸"
             className="absolute -bottom-3 right-20 hidden h-20 w-20 object-contain drop-shadow-[0_16px_28px_rgba(36,38,43,0.16)] lg:block"
             animate={{ rotate: [-3, 3, -3], y: [0, 6, 0] }}
@@ -162,7 +162,7 @@ export default function Hero() {
           />
 
           <DraggableSticker
-            src="/images/riti-laugh-cut.png"
+            src={`${import.meta.env.BASE_URL}images/riti-laugh-cut.png`}
             alt="笑着的栗提贴纸"
             className="absolute -left-7 top-8 hidden h-20 w-20 object-contain drop-shadow-[0_16px_28px_rgba(36,38,43,0.16)] xl:block"
             animate={{ rotate: [-4, 2, -4], y: [0, -4, 0] }}

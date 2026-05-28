@@ -158,7 +158,7 @@ export default function RitiRunner() {
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/images/riti-thumb-cut.png";
+    image.src = `${import.meta.env.BASE_URL}images/riti-thumb-cut.png`;
     imageRef.current = image;
 
     const canvas = canvasRef.current;

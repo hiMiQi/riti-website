@@ -63,7 +63,7 @@ export const projectCards = [
     status: "跳跃边界已修好",
     text: "把 deadline、bug 和早八做成障碍物，栗提负责跳过去，玩家负责不要笑得太大声。",
     href: "#/games/riti-run",
-    image: "/images/riti-thumb-cut.png",
+    image: `${import.meta.env.BASE_URL}images/riti-thumb-cut.png`,
     tags: ["Canvas", "计分", "可玩"],
   },
   {
@@ -73,7 +73,7 @@ export const projectCards = [
     status: "晚安组继续补图",
     text: "围绕晚安、摸鱼、假装聪明和认真吃饭做日常聊天表情，保持温暖但不幼稚。",
     href: "#表情包",
-    image: "/images/riti-brand/sticker-sleepy.png",
+    image: `${import.meta.env.BASE_URL}images/riti-brand/sticker-sleepy.png`,
     tags: ["聊天", "晚安", "日常"],
   },
   {
@@ -83,7 +83,7 @@ export const projectCards = [
     status: "新增水果和米饭分类",
     text: "把栗提吃到的水果、料理和饭后小结收在一起，像一份能慢慢翻的生活账本。",
     href: "#味道日记",
-    image: "/images/riti-brand/birthday.png",
+    image: `${import.meta.env.BASE_URL}images/riti-brand/birthday.png`,
     tags: ["水果", "料理", "记录"],
   },
   {
@@ -93,7 +93,7 @@ export const projectCards = [
     status: "记忆翻牌加入栗子规则",
     text: "跑酷、打字、翻牌和消除都保留轻量入口，适合把栗提的道具和性格放进去试一试。",
     href: "#小游戏实验",
-    image: "/images/riti-laugh-cut.png",
+    image: `${import.meta.env.BASE_URL}images/riti-laugh-cut.png`,
     tags: ["互动", "轻量", "角色延展"],
   },
 ];
@@ -104,20 +104,20 @@ export const photoRecords = [
     place: "栗提森林",
     title: "栗提和朋友在树屋前打了个招呼",
     text: "阳光落在树屋旁边，栗提和朋友挤在一起拍了一张合照。不是正式摆拍，更像某个开心下午被顺手留下来的瞬间。",
-    image: "/images/riti-brand/friends-photo.png",
+    image: `${import.meta.env.BASE_URL}images/riti-brand/friends-photo.png`,
   },
   {
     date: "2026.05.16",
     place: "苹果小园",
     title: "栗提给小苹果树松了第一铲土",
     text: "阳光正好，栗提把新苗旁边的土轻轻压平，又认真数了一遍枝头的小苹果，决定把今天记成森林里的甜味开始。",
-    image: "/images/riti-brand/riti-apple-garden.png",
+    image: `${import.meta.env.BASE_URL}images/riti-brand/riti-apple-garden.png`,
   },
   {
     date: "2026.05.08",
     place: "窗边晚安区",
     title: "月亮升起来以后，栗提终于安静了",
     text: "睡前照片替换成这一张。不是因为它完美，而是因为今天真的有一点困。",
-    image: "/images/riti-sleep.png",
+    image: `${import.meta.env.BASE_URL}images/riti-sleep.png`,
   },
 ];

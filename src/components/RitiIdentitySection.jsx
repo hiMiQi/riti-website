@@ -45,7 +45,7 @@ export default function RitiIdentitySection() {
             transition={{ duration: 0.5, delay: 0.04 }}
           >
             <img
-              src="/images/riti-brand/standard-card.png"
+              src={`${import.meta.env.BASE_URL}images/riti-brand/standard-card.png`}
               alt="栗提 Riti 角色标准设定图"
               className="aspect-[3/2] w-full rounded-md object-contain"
               loading="lazy"

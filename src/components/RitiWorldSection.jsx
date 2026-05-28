@@ -74,7 +74,7 @@ export default function RitiWorldSection() {
         >
           <div className="overflow-hidden rounded-lg border border-line bg-white p-3 shadow-card">
             <img
-              src="/images/riti-brand/riti-cake-kitchen.png"
+              src={`${import.meta.env.BASE_URL}images/riti-brand/riti-cake-kitchen.png`}
               alt="栗提在厨房装饰蛋糕"
               className="aspect-[4/3] w-full rounded-md object-cover"
               loading="lazy"
